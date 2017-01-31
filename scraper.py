@@ -39,11 +39,11 @@ for period, periodid in annReportingPeriods.items():
     response = br.submit("ctl00$buttonGo")
     response = br.open(annDonorsurl)
 
-    br.select_form(name="aspnetForm")
+    br.select_form(nr=0)
     #br['ctl00$ContentPlaceHolderBody$dropDownListParties']=["0"]
     response = br.submit("ctl00$ContentPlaceHolderBody$analysisControl$buttonExport")
 
-    br.select_form(name="aspnetForm")
+    br.select_form(nr=0)
     br['ctl00$ContentPlaceHolderBody$exportControl$dropDownListOptions']=['csv']
     response = br.submit("ctl00$ContentPlaceHolderBody$exportControl$buttonExport")
     
