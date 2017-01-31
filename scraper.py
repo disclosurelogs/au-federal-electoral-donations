@@ -60,6 +60,7 @@ for period, periodid in annReportingPeriods.items():
     rows = []
     for row in clist:
         if len(row) == 9: 
+            row = [''.join([i if ord(i) < 128 else ' ' for i in v]) for v in row]
             row[8] = period # "ReportingPeriod"
             #print dict(zip(headers, row))
             rows.append(dict(zip(headers, row)))
