@@ -32,7 +32,7 @@ for period, periodid in annReportingPeriods.items():
     print "Loading data for "+period
     #print "All forms:", [ form.name  for form in br.forms() ]
 
-    br.select_form(name="aspnetForm")
+    br.select_form(nr=0)
     #print br.form
 
     br['ctl00$dropDownListPeriod']=[periodid]
