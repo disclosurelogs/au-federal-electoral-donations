@@ -4,7 +4,7 @@ import mechanize
 import lxml.html
 import scraperwiki
 
-annDonorsurl = "http://periodicdisclosures.aec.gov.au/AnalysisDonor.aspx"
+annDonorsurl = "https://periodicdisclosures.aec.gov.au/AnalysisDonor.aspx"
 
 annReportingPeriods={
 #"1998-1999":"1",
